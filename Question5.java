@@ -27,6 +27,32 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    
+    System.out.print("Enter a number: ");
+    int num = in.nextInt();
+    int [] array=new int[num];
+    int mostValue = 0;
+    int Total = 0;
+
+    for(int i=0;i<num;i++)
+    {  
+      System.out.print("Enter an integer: ");
+      array[i] = in.nextInt();
+    }
+    for (int j=0;j<num;j++) 
+    {
+      int temp = 0;
+      for (int k=0;k<num;k++)
+      {
+         if (array[k] == array[j])
+         temp++;
+      }
+
+      if (temp > Total) 
+      {
+         Total = temp;
+         mostValue = array[j];
+      }
+    }
+    System.out.println(mostValue);
   }
 }
