@@ -27,7 +27,6 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    System.out.print("Enter a number: ");
     int num = in.nextInt();
     int [] array=new int[num];
     int mostValue = 0;
@@ -35,7 +34,6 @@ public class Question5
 
     for(int i=0;i<num;i++)
     {  
-      System.out.print("Enter an integer: ");
       array[i] = in.nextInt();
     }
     for (int j=0;j<num;j++) 
